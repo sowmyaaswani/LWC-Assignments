@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Assignment2">
+        <div class="slds-p-around_medium">
+            <lightning-input type="checkbox" label="Show Text" checked={showText} onchange={handleChange}></lightning-input>
+            <template if:true={showText}>
+                <p>My Name is {YOUR_NAME}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
